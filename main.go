@@ -661,7 +661,7 @@ func (m *model) updateVMList() {
 	m.list.SetItems(items)
 
 	// Update title
-	baseTitle := fmt.Sprintf("Select VM from project: %s", m.selectedProject)
+	baseTitle := fmt.Sprintf("Sunrise Parabellum\nSelect VM from project: %s", m.selectedProject)
 	if m.filtering {
 		filterText := m.styles.Filter.Render("Filter:") + " " + m.filterText
 		m.list.Title = fmt.Sprintf("%s\n%s", baseTitle, filterText)
